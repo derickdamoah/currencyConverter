@@ -1,0 +1,117 @@
+/* MOBILE VIEW */
+/* setting the background color to white */
+body {
+  background-color: white;
+}
+
+h1 {
+  color: #0071d4; /* blue */
+  text-align: center;
+  font-size: 40px;
+  font-family: Arial;
+}
+
+/* creating a number input and select input */
+input[type=number], select {
+  width: 100%;
+  padding: 12px;
+  margin: 80px, 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 22px;
+  font-family: Arial;
+}
+
+/* creating a submit button  */
+input[type=button], input[type=submit] {
+  width: 100%;
+  background-color: #f44336; /* red */
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 10px 0;
+  cursor: pointer;
+  font-family: Arial;
+  font-size: 24px;
+}
+
+/* when you hover on the submit button it will turn black */
+input[type=submit]:hover {
+background-color: black;
+}
+
+/* creating a base to hold our buttons*/
+div {
+  border-radius: 4px;
+  background-color: #0071d4; /* blue */
+  padding: 20px 10px 20px 10px; /* top, right, bottom, left */
+  height: auto;
+  width: 90%;
+  margin: auto;
+}
+
+/* creating a div base to hold the submit button */
+div.submitbutton{
+  border-radius: 4px;
+  background-color: #0071d4;
+  padding: 10px 0px;
+  height: auto;
+  width: 100%;
+  margin: auto;
+}
+
+/* creating an output field to hold the converted output */
+div.output {
+  margin: auto;
+  height: auto;
+  width: 100%;
+  padding: 0px;
+  text-align: center;
+}
+
+/* formatting the labels in the fields */
+label {
+  padding: 20px 0px 10px;
+  color: white;
+  font-size: 22px;
+  font-family: Arial;
+  margin: 80px 100;
+  display: inline-block;
+}
+
+/* displaying our results as a label */
+label.output {
+  font-size:10vw;
+}
+
+
+/* ON DESKTOP VIEW */
+@media only screen and (min-width: 600px) {
+
+div {
+  border-radius: 4px;
+  background-color: #0071d4; /* blue */
+  padding: 20px 50px 20px 50px;
+  height: auto;
+  width: 40%; /* width reduced */
+  margin: auto;
+}
+
+
+div.submitbutton{
+  border-radius: 4px;
+  background-color: #0071d4; /* BLUE */
+  padding: 10px 0px;
+  height: auto;
+  width: 50%; /* submit button reduced to 50% */
+  margin: auto;
+}
+
+
+label.output {
+  font-size:3vw; /* result output font reduced to 3vw */
+}
+
+}
